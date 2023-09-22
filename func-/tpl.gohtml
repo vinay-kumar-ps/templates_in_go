@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car and Sage Details</title>
+</head>
+<body>
+    <h1>Sages</h1>
+    <ul>
+        {{range .Wisdom}}
+        <li>Name: {{.Name}}</li>
+        <li>Motto: {{.Motto}}</li>
+        {{end}}
+    </ul>
+
+    <h1>Cars</h1>
+    <ul>
+        {{range .Transport}}
+        <li>Manufacturer: {{.Manufacturer}}</li>
+        <li>Model: {{.Model}}</li>
+        <li>Doors: {{.Doors}}</li>
+        {{end}}
+    </ul>
+</body>
+</html>
